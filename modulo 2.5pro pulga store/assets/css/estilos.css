@@ -1,0 +1,142 @@
+
+/* Fuente y colores generales en el body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(93, 118, 164);
+    color: rgb(100, 48, 48);
+}
+
+/* Asegura que el box-sizing sea border-box en todos los elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* colores y estilos de los títulos h2 */
+h2 {
+    color: rgb(204, 23, 23);
+    background-color: aquamarine;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;     
+    text-align: center;
+}
+/* Sombra y color para el título h1 */
+header h1 {
+    text-shadow: 2px 2px 8px #000, 0 0 10px #fff;
+    color: #fff;
+}
+h1 {
+    color: rgb(95, 64, 146);
+    font-size: 2.5em;
+    margin: 50px 0 20px 0;
+}
+
+/* Banner del header con degradado y fondo  , se cambia la ruta de la imagen*/
+header {
+    background: linear-gradient(rgba(242, 238, 249, 0.5), rgba(0, 153, 255, 0.5)),
+                url('img/banner.avif') center/cover no-repeat;
+    color: white;
+    padding: 40px 0 80px 0;
+    text-align: left;
+    position: relative;
+}
+
+/* Menú de navegación */
+nav {
+    margin-top: 10px;
+    font-size: 1em;
+}
+/* Estilos del menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #7bc84e; /* Color de fondo del menú */
+    border-radius: 5px;
+}
+/* Elementos del menú de navegación */
+nav span, nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+/* Estilo de los enlaces del menú */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* configuracion del main */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(15, 15, 15);
+}
+
+/* secciones */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+/* Pie de página */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Formulario */
+form label {
+    font-weight: bold;
+}
+/* Estilo de los campos del formulario */
+form button {
+    background: yellowgreen;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background: black;
+}
+
+/* Galería de imágenes */
+/* Flex para alinear y distribuir imágenes */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+/* Imágenes de la galería: tamaño fijo, bordes y efecto hover */
+.foto-galeria {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: transform 0.2s, border-color 0.2s;
+    background: #fff;
+}
+.foto-galeria:hover {
+    transform: scale(1.05);
+    border-color: #4e54c8;
+}
+/*se elimina los media queries ya que no son necesarios en este caso*/
